@@ -1,3 +1,9 @@
+## TRABALHO DE LABORATORIO DE PROGRAMAÇÃO
+## TEMA: CADASTRO DE PESSOAS
+### ALUNA: APARECIDA CRISTINA SILVA
+---
+
+
 # Sistema de Cadastro de Clientes em Python 📝
 
 Este é um projeto simples e intuitivo para cadastro de clientes utilizando uma interface gráfica integrada com salvamento de dados em arquivos de texto (`.txt`) individuais e personalizados.

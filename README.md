@@ -29,9 +29,28 @@ Se você esquecer disso, o comando `python` não funcionará no CMD.
 
 Com base na pasta atual, certifique-se de que o seu arquivo de código está nomeado corretamente:
 
-```text
 Área de Trabalho/
 └── Laboratorio/
     └── Cadastro.py
 
- Como Executar o Programa pelo CMD
+## Como Executar o Programa pelo CMD
+-> Windows + R
+como na imagem a baixo digite cmd e de Enter.
+
+<img width="402" height="210" alt="image" src="https://github.com/user-attachments/assets/894605ad-d696-42e9-ab27-287636c04a90" />
+
+---
+No prompt de comando (cmd)
+de esses comandos
+
+1° cd Desktop\Laboratorio               --> o nome da pasta aonde está o arquivo
+2° python Cadastro.py                   --> nome do arquivo com o codigo
+
+<img width="976" height="504" alt="cmd" src="https://github.com/user-attachments/assets/552d2263-ba67-4e1e-99ac-ecc9707a5638" />
+
+
+
+
+
+
+

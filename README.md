@@ -5,7 +5,7 @@
 
 # Cadastro de Clientes com Interface Gráfica
 
-Este é um sistema simples e eficiente para cadastro de clientes desenvolvido em Python, utilizando a biblioteca **Tkinter** para a interface gráfica. O 
+Este é um sistema simples para cadastro de clientes desenvolvido em Python, utilizando a biblioteca **Tkinter** para a interface gráfica. O 
 programa permite registrar o nome e telefone de clientes, aplicando formatação automática ao número de telefone, e salva as informações em arquivos de texto 
 (`.txt`) individuais. Também conta com um gerador de relatório diário integrado.
 

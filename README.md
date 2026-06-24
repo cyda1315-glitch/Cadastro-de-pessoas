@@ -44,13 +44,23 @@ No prompt de comando (cmd)
 de esses comandos
 
 1° cd Desktop\Laboratorio               --> o nome da pasta aonde está o arquivo
+
 2° python Cadastro.py                   --> nome do arquivo com o codigo
 
 <img width="976" height="504" alt="cmd" src="https://github.com/user-attachments/assets/552d2263-ba67-4e1e-99ac-ecc9707a5638" />
 
 
+## Interface de cadastro do cliente
 
+<img width="729" height="341" alt="interface" src="https://github.com/user-attachments/assets/6bb4bb14-b29d-4328-a188-c092229eb0cf" />
 
+## Pasta onde está o código e todos os clientes já cadastrados.
+
+<img width="871" height="196" alt="image" src="https://github.com/user-attachments/assets/bcd64993-d8f4-488a-b7c0-7b9cd31d3371" />
+
+## Relatório de todos os clientes registrados no dia
+
+<img width="482" height="462" alt="relatorio" src="https://github.com/user-attachments/assets/40c227e8-408f-4329-89ea-a9701bf32c47" />
 
 
 

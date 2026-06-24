@@ -64,7 +64,7 @@ def abrir_relatorio_diario():
                 
             blocos = conteudo.split("-" * 30)
             for bloco in blocos:
-                # Se a data de hoje estiver nesse bloco de cadastro, adiciona ao relatório
+                
                 if f"Data do Cadastro: {data_hoje}" in bloco:
                     texto_relatorio += bloco.strip() + "\n"
                     texto_relatorio += "-" * 30 + "\n\n"

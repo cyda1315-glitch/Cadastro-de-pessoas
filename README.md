@@ -3,7 +3,7 @@
 ### ALUNA: APARECIDA CRISTINA SILVA
 ---
 
-# Cadastro de Clientes com Interface Gráfica (Tkinter)
+# Cadastro de Clientes com Interface Gráfica
 
 Este é um sistema simples e eficiente para cadastro de clientes desenvolvido em Python, utilizando a biblioteca **Tkinter** para a interface gráfica. O 
 programa permite registrar o nome e telefone de clientes, aplicando formatação automática ao número de telefone, e salva as informações em arquivos de texto 

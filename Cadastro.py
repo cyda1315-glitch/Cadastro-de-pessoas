@@ -79,11 +79,11 @@ def abrir_relatorio_diario():
     txt_area = scrolledtext.ScrolledText(janela_relatorio, width=50, height=22, font=("CourierNew", 10))
     txt_area.pack(padx=10, pady=10, fill=tk.BOTH, expand=True)
     txt_area.insert(tk.INSERT, texto_relatorio)
-    txt_area.configure(state='disabled') # Impede o usuário de apagar o texto do relatório
+    txt_area.configure(state='disabled') 
 
 janela = tk.Tk()
 janela.title("Cadastro de Clientes")
-janela.geometry("350x280") # Aumentei um pouquinho a altura para acomodar o novo botão
+janela.geometry("350x280") 
 
 lbl_nome = tk.Label(janela, text="Nome do Cliente:", font=("Arial", 10, "bold"))
 lbl_nome.pack(pady=(15, 2))

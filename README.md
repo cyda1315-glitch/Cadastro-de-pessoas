@@ -11,7 +11,7 @@ programa permite registrar o nome e telefone de clientes, aplicando formatação
 
 ---
 
-## 🚀 Pré-requisitos
+## Pré-requisitos
 
 Para rodar este projeto na sua máquina Windows, você precisará ter o **Python** instalado.
 
@@ -25,12 +25,14 @@ Se você esquecer disso, o comando `python` não funcionará no CMD.
 
 ---
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 Com base na pasta atual, certifique-se de que o seu arquivo de código está nomeado corretamente:
 
 Área de Trabalho/
+
 └── Laboratorio/
+ 
     └── Cadastro.py
 
 ## Como Executar o Programa pelo CMD
@@ -52,13 +54,18 @@ de esses comandos
 
 ## Interface de cadastro do cliente
 
+
 <img width="729" height="341" alt="interface" src="https://github.com/user-attachments/assets/6bb4bb14-b29d-4328-a188-c092229eb0cf" />
+
 
 ## Pasta onde está o código e todos os clientes já cadastrados.
 
+
 <img width="871" height="196" alt="image" src="https://github.com/user-attachments/assets/bcd64993-d8f4-488a-b7c0-7b9cd31d3371" />
 
+
 ## Relatório de todos os clientes registrados no dia
+
 
 <img width="482" height="462" alt="relatorio" src="https://github.com/user-attachments/assets/40c227e8-408f-4329-89ea-a9701bf32c47" />
 

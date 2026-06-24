@@ -55,7 +55,6 @@ def abrir_relatorio_diario():
     texto_relatorio = f"--- RELATÓRIO DE CADASTROS DO DIA {data_hoje} ---\n\n"
     total_cadastros = 0
     
-    # Procura por todos os arquivos .txt na pasta do script
     for arquivo_nome in os.listdir(pasta_atual):
         if arquivo_nome.endswith(".txt"):
             caminho_completo = os.path.join(pasta_atual, arquivo_nome)
@@ -63,7 +62,6 @@ def abrir_relatorio_diario():
             with open(caminho_completo, "r", encoding="utf-8") as f:
                 conteudo = f.read()
                 
-            # Divide os blocos de cadastros pelo separador "---"
             blocos = conteudo.split("-" * 30)
             for bloco in blocos:
                 # Se a data de hoje estiver nesse bloco de cadastro, adiciona ao relatório

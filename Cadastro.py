@@ -3,11 +3,9 @@ from tkinter import messagebox, scrolledtext
 import os
 from datetime import datetime
 
-# Função para passar o foco do Nome para o Telefone ao apertar ENTER
 def ir_para_telefone(event):
     entry_telefone.focus_set()
 
-# Função para formatar o telefone automaticamente enquanto digita
 def formatar_telefone(event):
     texto = entry_telefone.get()
     apenas_numeros = "".join([char for char in texto if char.isdigit()])
@@ -24,7 +22,6 @@ def formatar_telefone(event):
     entry_telefone.delete(0, tk.END)
     entry_telefone.insert(0, formato)
 
-# Função para salvar os dados no arquivo TXT personalizado
 def salvar_cliente():
     nome = entry_nome.get().strip()
     telefone = entry_telefone.get().strip()
@@ -51,7 +48,6 @@ def salvar_cliente():
     entry_telefone.delete(0, tk.END)
     entry_nome.focus_set()
 
-# --- NOVA FUNÇÃO: Gerar e exibir o Relatório Diário ---
 def abrir_relatorio_diario():
     pasta_atual = os.path.dirname(os.path.abspath(__file__))
     data_hoje = datetime.now().strftime("%d/%m/%Y")
@@ -78,23 +74,19 @@ def abrir_relatorio_diario():
 
     texto_relatorio += f"Total de novos cadastros hoje: {total_cadastros}"
 
-    # Criando uma nova janela para exibir o relatório de forma elegante
     janela_relatorio = tk.Toplevel(janela)
     janela_relatorio.title(f"Relatório Diário - {data_hoje}")
     janela_relatorio.geometry("450x400")
     
-    # Campo de texto com barra de rolagem automática caso a lista seja grande
     txt_area = scrolledtext.ScrolledText(janela_relatorio, width=50, height=22, font=("CourierNew", 10))
     txt_area.pack(padx=10, pady=10, fill=tk.BOTH, expand=True)
     txt_area.insert(tk.INSERT, texto_relatorio)
     txt_area.configure(state='disabled') # Impede o usuário de apagar o texto do relatório
 
-# --- Configuração da Interface Gráfica ---
 janela = tk.Tk()
 janela.title("Cadastro de Clientes")
 janela.geometry("350x280") # Aumentei um pouquinho a altura para acomodar o novo botão
 
-# Rótulo e Campo para o Nome
 lbl_nome = tk.Label(janela, text="Nome do Cliente:", font=("Arial", 10, "bold"))
 lbl_nome.pack(pady=(15, 2))
 entry_nome = tk.Entry(janela, width=35)
@@ -102,7 +94,6 @@ entry_nome.pack(pady=5)
 
 entry_nome.bind("<Return>", ir_para_telefone)
 
-# Rótulo e Campo para o Telefone
 lbl_telefone = tk.Label(janela, text="Telefone/Celular:", font=("Arial", 10, "bold"))
 lbl_telefone.pack(pady=(10, 2))
 entry_telefone = tk.Entry(janela, width=35)
@@ -110,19 +101,15 @@ entry_telefone.pack(pady=5)
 
 entry_telefone.bind("<KeyRelease>", formatar_telefone)
 
-# Container (Frame) para alinhar os botões lado a lado de forma organizada
 frame_botoes = tk.Frame(janela)
 frame_botoes.pack(pady=20)
 
-# Botão de Cadastrar (Verde)
 btn_cadastrar = tk.Button(frame_botoes, text="Salvar Cadastro", command=salvar_cliente, bg="#4CAF50", fg="white", font=("Arial", 10, "bold"), padx=10)
 btn_cadastrar.pack(side=tk.LEFT, padx=5)
 
-# NOVO: Botão de Relatório (Azul)
 btn_relatorio = tk.Button(frame_botoes, text="Relatório Diário", command=abrir_relatorio_diario, bg="#2196F3", fg="white", font=("Arial", 10, "bold"), padx=10)
 btn_relatorio.pack(side=tk.LEFT, padx=5)
 
-# Define o foco inicial direto no campo de nome ao abrir o programa
 entry_nome.focus_set()
 
 janela.mainloop()
